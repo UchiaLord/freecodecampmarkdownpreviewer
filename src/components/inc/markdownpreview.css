@@ -1,0 +1,141 @@
+/* MarkdownPreviewer.css */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  .markdown-container {
+    display: flex;
+    width: 80%;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .markdown-container:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .editor-container,
+  .preview-container {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  textarea {
+    width: 100%;
+    height: calc(100% - 40px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    resize: none;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  textarea:focus {
+    border-color: #3498db;
+  }
+  
+  #preview {
+    margin-top: 20px;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  h1, h2, h3 {
+    color: #3498db;
+  }
+  
+  a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  a:hover {
+    color: #2074a0;
+    text-decoration: underline;
+  }
+  
+  pre {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    overflow: auto;
+  }
+  
+  code {
+    background-color: #f9f9f9;
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+  }
+  
+  blockquote {
+    border-left: 2px solid #3498db;
+    padding-left: 10px;
+    color: #777;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Added: Custom Cursor */
+  textarea, .preview-container {
+    cursor: text;
+  }
+  
+  /* Added: Responsive Design */
+  @media (max-width: 768px) {
+    .markdown-container {
+      flex-direction: column;
+      width: 90%;
+    }
+  }
+  
+  /* Added: Custom Hover Effects */
+  button, .toolbar i {
+    transition: color 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  button:hover, .toolbar i:hover {
+    color: #3498db;
+  }
+  
+  /* Added: Box Shadows and Depth to Form Elements */
+  button, input, select {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Added: Responsive Images */
+  img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Added: Animated Box Shadows on Hover */
+  .editor-container:hover, .preview-container:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Additional Custom Styling - Adjust as needed */
+  
